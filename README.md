@@ -66,3 +66,6 @@ You can also provide the credentials via your maven settings.xml. See https://wi
 * Marcel Birkner
 * Andreas Houben
 * Christian Langmann 
+=======
+# jenkins-pipeline
+Jenkins pipeline for auto deployment from gitlab/perforce
