@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<log>
+  <name>Custom</name>
+  <targets>
+    <target>
+      <name>de.codecentric.jenkins.dashboard.DashboardView</name>
+      <level>-2147483648</level>
+    </target>
+    <target>
+      <name>de.codecentric.jenkins.dashboard.impl.environments.ec2.EC2Connector</name>
+      <level>-2147483648</level>
+    </target>
+    <target>
+      <name>de.codecentric.jenkins</name>
+      <level>-2147483648</level>
+    </target>
+  </targets>
+</log>

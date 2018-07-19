@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<de.codecentric.jenkins.dashboard.DashboardViewDescriptor plugin="ec2-deployment-dashboard@1.0.11-SNAPSHOT">
+  <repositoryType>artifactory</repositoryType>
+  <repositoryRestUri>https://artfact-prd-vip.vmware.com/artifactory</repositoryRestUri>
+  <username>rbhal</username>
+  <password>APAKG2rr4X53xqTce8KLWttKXS7</password>
+</de.codecentric.jenkins.dashboard.DashboardViewDescriptor>

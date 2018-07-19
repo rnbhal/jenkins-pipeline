@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <parameters class="java.util.Arrays$ArrayList">
+        <a class="hudson.model.ParameterValue-array">
+          <hudson.model.StringParameterValue>
+            <name>VERSION</name>
+            <value>2018.08.03.03</value>
+          </hudson.model.StringParameterValue>
+        </a>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.ParametersAction>
+      <parameters class="java.util.Arrays$ArrayList">
+        <a class="hudson.model.ParameterValue-array">
+          <hudson.model.StringParameterValue>
+            <name>ENVIRONMENT</name>
+            <value>dev11</value>
+          </hudson.model.StringParameterValue>
+        </a>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>6</queueId>
+  <timestamp>1530024125237</timestamp>
+  <startTime>1530024125254</startTime>
+  <result>SUCCESS</result>
+  <duration>883</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Users\rbhal\Documents\gitlab\dashboard - Copy\work\workspace\Redeploy</workspace>
+  <hudsonVersion>1.609.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

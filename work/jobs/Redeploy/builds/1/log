@@ -1,0 +1,30 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Users\rbhal\Documents\gitlab\dashboard - Copy\work\workspace\Redeploy
+[Redeploy] $ sh -xe C:\Users\rbhal\AppData\Local\Temp\2\hudson7512939959574911746.sh
+The system cannot find the file specified
+FATAL: command execution failed
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Cannot run program "sh" (in directory "C:\Users\rbhal\Documents\gitlab\dashboard - Copy\work\workspace\Redeploy"): CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at hudson.Proc$LocalProc.<init>(Proc.java:244)
+	at hudson.Proc$LocalProc.<init>(Proc.java:216)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:803)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:381)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:97)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:761)
+	at hudson.model.Build$BuildExecution.build(Build.java:203)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:160)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:536)
+	at hudson.model.Run.execute(Run.java:1741)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:374)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 15 more
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,156 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:f="/lib/form" xmlns:d="jelly:define">
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/superagent/0.15.7/superagent.min.js" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.js"></script>
+
+	<!-- Custom Styles for table -->
+	<style type="text/css">
+		.running {
+			background-color: lightgreen
+		}
+		
+		.stopped {
+			background-color: red
+		}
+		.JENKINS {
+			background-color: lightblue
+		}
+	</style>
+
+	<h1>${%main.view.title}</h1>
+	
+  	<script>
+	  function deploy() {
+	    var app = <st:bind value="${it}"/>
+	    var version = document.getElementById('versionId').value;
+	    var environment = document.getElementById('environmentId').value;
+	    var appName = document.getElementById('appId').value;
+	    document.getElementById('msg').innerHTML = "Deploying [ " + appName + " ] VERSION [" + version + "] to ENVIRONMENT [" + environment + "]. Please wait ...";
+	    app.deploy(appName, version, environment, function(t) {
+	      document.getElementById('msg').innerHTML = t.responseObject();
+	    })
+	  }
+  	</script>
+	
+    <h2 style='${it.displayDeployField}'>${%main.view.artefact.versions}</h2>
+
+    <table class="pane bigtable" style='background-color:lightgreen;${it.displayDeployField}'>
+        <tr>
+          <td>
+              <div align='center'>
+                <h3>${%main.view.available.releases}</h3>
+                <p>${%main.view.select.version}</p>
+                
+                ${%main.view.application}
+                
+                <select id="appId" name='APPLICATION' onchange="addOption()" data-live-search="true" data-live-search-style="startsWith" class="selectpicker">
+                    <j:set var="apps" value="${it.getAppList()}"/>
+                    <j:forEach var="app" items="${apps}">
+                      <center>
+                            <option value='${app}'>${app}</option>
+                      </center>
+                      <br />
+                    </j:forEach>
+                </select>
+                
+                ${%main.view.version}
+                
+                <select id="versionId" name='VERSION' data-live-search="true" data-live-search-style="startsWith" class="selectpicker">
+                </select>
+                
+                ${%main.view.environment}
+                
+                <select id="environmentId" name='ENVIRONMENT' data-live-search="true" data-live-search-style="startsWith" class="selectpicker">
+                    <j:set var="environments" value="${it.getEnvList()}"/>
+                    <j:forEach var="env" items="${environments}">
+                        <option value='${env}'>${env}</option>
+                    </j:forEach>
+                </select>
+
+                ${%main.view.deploy.app}
+                
+				<a id="deployLink" title="${%main.view.deploy.app.link}" href="" onclick="deploy(); return false;">
+					<img title="${%main.view.build.parameters}" alt="${%main.view.build.parameters}" src="${rootURL}/images/24x24/clock.png" border="0" />
+				</a>
+				
+				<p>
+				  <div id="msg" />
+				</p>
+				
+              </div>
+          </td>
+        </tr>
+    </table>
+        
+    <h2>${%main.view.server.title}</h2>
+
+    <table class="pane bigtable">
+		<tr align="center" style="background-color: lightgrey">
+			<th>${%main.view.server.application}</th>
+			<j:set var="environments" value="${it.getEnvList()}"/>
+                    <j:forEach var="env" items="${environments}">
+	                        <th>${env}</th>
+            </j:forEach>
+		</tr>
+		<j:set var="ec2Environments" value="${it.getMatchingEC2Environments()}"/>
+		<j:forEach var="ec2Instance" items="${ec2Environments}">
+			<tr>
+	        	<td align="center">${ec2Instance.appName}</td>
+	        	
+	        	<j:set var="envrionmentDetails" value="${ec2Instance.envrionmentDetails}"/>
+                    <j:forEach var="envrionmentDetail" items="${envrionmentDetails}">
+                    <j:if test="${envrionmentDetail.state.name == 'running'}">
+        			<td class = "running">
+	        			<ul>
+		        			<li>
+			                   	<a href = "${envrionmentDetail.uri}">${envrionmentDetail.version}</a> 
+			                </li>
+			                <li>
+			                upTime:  ${envrionmentDetail.upTime} 
+			                </li>
+			                <li>
+			                BuildTime:  ${envrionmentDetail.buildTime}
+			                </li>
+		                </ul>
+	                </td>
+				  </j:if>
+				  <j:if test="${envrionmentDetail.state.name != 'running'}">
+					<td class = "stopped">
+                    	${envrionmentDetail.state.name}
+                    </td>
+				  </j:if>
+            </j:forEach>
+			</tr>
+		</j:forEach>
+	</table>
+	
+	<script>
+	function addOption(){
+	  		var apps = <st:bind value="${it}"/>;
+			var select = document.getElementById("versionId");
+		  	var appName = document.getElementById('appId').value;
+		  	apps.getArtifacts(appName, function(t) {
+		      data = t.responseObject();
+		      select.options.length = 0;
+		      var i;
+		      var len = data.length;
+		      for(i in data){
+		      	if (typeof data[i].version != 'undefined'){
+		      		console.log(data[i].version);
+		      		$('#versionId').append('<option value="'+data[i].version+'">'+data[i].version+'</option>');
+		     	}
+		     	if(select.options.length == len)
+		     		break;
+		      }
+		      $('#versionId').selectpicker('refresh');
+		   })
+	  }
+  	</script>
+
+</j:jelly>

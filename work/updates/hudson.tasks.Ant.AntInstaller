@@ -1,0 +1,210 @@
+{
+  "list":   [
+        {
+      "id": "1.10.4",
+      "name": "1.10.4",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.4-bin.zip"
+    },
+        {
+      "id": "1.10.3",
+      "name": "1.10.3",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.3-bin.zip"
+    },
+        {
+      "id": "1.10.2",
+      "name": "1.10.2",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.2-bin.zip"
+    },
+        {
+      "id": "1.10.1",
+      "name": "1.10.1",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.1-bin.zip"
+    },
+        {
+      "id": "1.10.0",
+      "name": "1.10.0",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.0-bin.zip"
+    },
+        {
+      "id": "1.9.12",
+      "name": "1.9.12",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.12-bin.zip"
+    },
+        {
+      "id": "1.9.11",
+      "name": "1.9.11",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.11-bin.zip"
+    },
+        {
+      "id": "1.9.10",
+      "name": "1.9.10",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.10-bin.zip"
+    },
+        {
+      "id": "1.9.9",
+      "name": "1.9.9",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.9-bin.zip"
+    },
+        {
+      "id": "1.9.8",
+      "name": "1.9.8",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.8-bin.zip"
+    },
+        {
+      "id": "1.9.7",
+      "name": "1.9.7",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.7-bin.zip"
+    },
+        {
+      "id": "1.9.6",
+      "name": "1.9.6",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.6-bin.zip"
+    },
+        {
+      "id": "1.9.5",
+      "name": "1.9.5",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.5-bin.zip"
+    },
+        {
+      "id": "1.9.4",
+      "name": "1.9.4",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.zip"
+    },
+        {
+      "id": "1.9.3",
+      "name": "1.9.3",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.3-bin.zip"
+    },
+        {
+      "id": "1.9.2",
+      "name": "1.9.2",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.2-bin.zip"
+    },
+        {
+      "id": "1.9.1",
+      "name": "1.9.1",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.1-bin.zip"
+    },
+        {
+      "id": "1.9.0",
+      "name": "1.9.0",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.0-bin.zip"
+    },
+        {
+      "id": "1.8.4",
+      "name": "1.8.4",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.8.4-bin.zip"
+    },
+        {
+      "id": "1.8.3",
+      "name": "1.8.3",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.8.3-bin.zip"
+    },
+        {
+      "id": "1.8.2",
+      "name": "1.8.2",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.8.2-bin.zip"
+    },
+        {
+      "id": "1.8.1",
+      "name": "1.8.1",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.8.1-bin.zip"
+    },
+        {
+      "id": "1.8.0",
+      "name": "1.8.0",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.8.0-bin.zip"
+    },
+        {
+      "id": "1.7.1",
+      "name": "1.7.1",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.7.1-bin.zip"
+    },
+        {
+      "id": "1.7.0",
+      "name": "1.7.0",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.7.0-bin.zip"
+    },
+        {
+      "id": "1.6.5",
+      "name": "1.6.5",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.6.5-bin.zip"
+    },
+        {
+      "id": "1.6.4",
+      "name": "1.6.4",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.6.4-bin.zip"
+    },
+        {
+      "id": "1.6.3",
+      "name": "1.6.3",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.6.3-bin.zip"
+    },
+        {
+      "id": "1.6.2",
+      "name": "1.6.2",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.6.2-bin.zip"
+    },
+        {
+      "id": "1.6.1",
+      "name": "1.6.1",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.6.1-bin.zip"
+    },
+        {
+      "id": "1.6.0",
+      "name": "1.6.0",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.6.0-bin.zip"
+    },
+        {
+      "id": "1.5.4",
+      "name": "1.5.4",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.5.4-bin.zip"
+    },
+        {
+      "id": "1.5.2",
+      "name": "1.5.2",
+      "url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.5.2-bin.zip"
+    },
+        {
+      "id": "1.5.1",
+      "name": "1.5.1",
+      "url": "https://archive.apache.org/dist/ant/binaries/jakarta-ant-1.5.1-bin.zip"
+    },
+        {
+      "id": "1.5",
+      "name": "1.5",
+      "url": "https://archive.apache.org/dist/ant/binaries/jakarta-ant-1.5-bin.zip"
+    },
+        {
+      "id": "1.4.1",
+      "name": "1.4.1",
+      "url": "https://archive.apache.org/dist/ant/binaries/jakarta-ant-1.4.1-bin.zip"
+    },
+        {
+      "id": "1.4",
+      "name": "1.4",
+      "url": "https://archive.apache.org/dist/ant/binaries/jakarta-ant-1.4-bin.zip"
+    },
+        {
+      "id": "1.3",
+      "name": "1.3",
+      "url": "https://archive.apache.org/dist/ant/binaries/jakarta-ant-1.3-bin.zip"
+    },
+        {
+      "id": "1.2",
+      "name": "1.2",
+      "url": "https://archive.apache.org/dist/ant/binaries/jakarta-ant-1.2-bin.zip"
+    }
+  ],
+  "signature":   {
+    "certificates": ["MIIC3TCCAcUCBQDerb75MA0GCSqGSIb3DQEBCwUAMIGKMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTERMA8GA1UEBxMIU2FuIEpvc2UxGDAWBgNVBAoTD0plbmtpbnMgUHJvamVjdDEaMBgGA1UEAxMRS29oc3VrZSBLYXdhZ3VjaGkxHTAbBgkqhkiG9w0BCQEWDmtrQGtvaHN1a2Uub3JnMB4XDTE3MTIxNTE2NTQwMloXDTE4MTIxNTE2NTQwMlowXjELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExGDAWBgNVBAoTD0plbmtpbnMgUHJvamVjdDEgMB4GA1UEAxMXQ29tbXVuaXR5IFVwZGF0ZSBDZW50ZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKTDDxjInVBgniu4TpRQoI29ci8lwzXsPX4anFI+1LiPsPk2RmIg05WEohD6RCzldgiNtaPGujyeR/+xXYd8Gev3Abm1OjlN6bZbzZHAX8FoDr4PJJWftq0LDg+YVki1p8eF65ByoHIVHmNeE7NH09kAnbT4w2DNGstwHcFO90RbAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAC3l8aoWLh+DsQOygAu3mwhrnyi+si6xYBuBJVPPJEUp3QUhxn4yWv6cTEovTynbqre8+6UPNBMHtHZ8rDa573wTmq8J7dzgjjxItJ3/VHKS7/KfgUlJOL8BkasyPC5f5ZgBAoUqQRK3OiVQiYDp+EpSWHO5y9IF/pLviaFBdVd1niwXJGh35nJ8zlytaq0qexqaR4WkOpbwJPDN9HIyUzri9JAl/30OHsxZn33xMz/EmqBMX04HinDAfFysSAJMgJjpipFF4OGbuut9AcLnzqUOewF++OEi/UUtXZL7I189+ATRcJ2ZwXtUVlIkPsIAJllnul7Mo1Nunppz22y7DxI="],
+    "correct_digest": "W1+BniRQumTRzeg0biVZkpsSu9g=",
+    "correct_digest512": "5ab542568f132212a319e44ae0b49314b9aa86a0475382572b244dc3c63a09f229dec6ba6a4a9ec279d5154865663e34c55a691d74f567dcef4f916a700cf167",
+    "correct_signature": "XSqfQZoHU2/caxDq/dubWWITgLlhgcwL8VqkrqSd5/Y6ZzTg+/3TsxShwUAZUh7ymXKXyxsLx+j6vTHirvSZ7NZPLekr1+FRiLwkE7JOCJLbOe6I/RaFMUQ3oUWyPuhk+xDp+HSB8bN5pUt5N7hKo5h9QYc00QbCQQXfE/Dm9E0=",
+    "correct_signature512": "097c3e35ebe81556e68a6239216df97fdf6c663679ef857c5999ebe0c8cfe776b53b397b4cc7c006bb80c46e98dd028d928706bd38c980427e8874292b39b85055bf4773b86cd620ed9e2c29090bc0832b1cca220ab518e6e657af8f877ed82dfb0ca8f98cc4d436a2750a915d42935a8187ee19d8cffbbbd14d85feaa215925",
+    "digest": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "digest512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+    "signature": "m6UxuBwiblfpmbZ8b4ynXnYj0dH66giB7qdFN0oU6saZcP5Nx3dZPcZa27Ac6K8LSiuz7Yq88NeQCusKTHGoWDd16X6+DNxcOQQg+UyTlUc3Mq+7D21DuYYYaiHGNhesg5gzyql4P9afxyM6hCKb3il1AX8eJJq74CiXVAz9WlM=",
+    "signature512": "840cd8c55574086414ef29f4a2565fe63e79b6c8c2f904048ef272aeffd0931cc501b40d20a5d431870d0541213d44edd7d0c8311c560aaf6cb4fb2acf65bb06591fca6f13c6c7db8efe1b181d16625b12c9308057e751a4594c14dce31ba83f53aa8703de6b9674dc5cc8c0aaeabc9f2df39c7de370f81b246d884ad9e6dde1"
+  }
+}

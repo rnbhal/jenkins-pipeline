@@ -1,0 +1,35 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+
+    <f:entry title="${%environment.name.title}" description="${%environment.name.description}">
+        <f:textbox field="name"/>
+    </f:entry>
+
+	<!-- 
+	<f:entry field="credentials" title="${%aws.credentials}">
+		<f:select />
+	</f:entry>
+
+    <f:entry field="region" title="${%aws.region}">
+        <f:select />
+    </f:entry>
+	
+    <f:entry field="awsInstance" title="${%aws.instance.title}" description="${%aws.instance.description}">
+        <f:select />
+    </f:entry>
+    
+    -->
+
+   <f:entry title="${%aws.url.prefix.title}" description="${%aws.url.prefix.description}">
+    	<f:textbox field="url"/>
+    </f:entry>
+
+    <f:entry title="${%environment.type.title}" description="${%environment.type.description}">
+        <f:textbox field="environmentType"/>
+    </f:entry>
+
+    <f:entry field="buildJob" title="${%buildjob.title}" description="${%buildjob.description}">
+        <f:combobox />
+    </f:entry>
+
+</j:jelly>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>app</name>
+          <description></description>
+          <value>SaasUserService</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>envs</name>
+          <description></description>
+          <value>dev11</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>version</name>
+          <description></description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1530022900932</timestamp>
+  <startTime>1530022900948</startTime>
+  <result>FAILURE</result>
+  <duration>735</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Users\rbhal\Documents\gitlab\dashboard - Copy\work\workspace\Redeploy</workspace>
+  <hudsonVersion>1.609.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

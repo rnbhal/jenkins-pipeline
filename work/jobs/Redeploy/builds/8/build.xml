@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters class="java.util.Arrays$ArrayList">
+        <a class="hudson.model.ParameterValue-array">
+          <hudson.model.StringParameterValue>
+            <name>version</name>
+            <description>Version to be deployed</description>
+            <value>2018.08.03.03</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>envs</name>
+            <description>Env in which to be deployed</description>
+            <value>test11</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>app</name>
+            <description>Artifact to be deployed</description>
+            <value>SaasUserService</value>
+          </hudson.model.StringParameterValue>
+        </a>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>app</name>
+              <description></description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>SaasUserService</string>
+                  <string>SaasTokenService</string>
+                  <string>SaasEurekaService</string>
+                  <string>SaasCloudConfig</string>
+                  <string>SaasContractService</string>
+                  <string>SaasUsageCapture</string>
+                  <string>SaasFundGroupService</string>
+                  <string>SaasCreditCardService</string>
+                  <string>SaasCreditCardIntegration</string>
+                  <string>SaasPayByInvoice</string>
+                  <string>SaasPaidOrderService</string>
+                  <string>SaasBillingService</string>
+                  <string>SaasMicroService</string>
+                  <string>SaasSupportService</string>
+                  <string>SaasSubscriptionService</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>envs</name>
+              <description></description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>dev11</string>
+                  <string>test11</string>
+                  <string>uat</string>
+                  <string>stage</string>
+                  <string>test36</string>
+                  <string>prod</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>version</name>
+              <description></description>
+              <defaultValue></defaultValue>
+            </hudson.model.StringParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1530102675784</timestamp>
+  <startTime>1530102675800</startTime>
+  <result>SUCCESS</result>
+  <duration>1294</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Users\rbhal\Documents\gitlab\dashboard - Copy\work\workspace\Redeploy</workspace>
+  <hudsonVersion>2.11</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>
